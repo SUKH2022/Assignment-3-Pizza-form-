@@ -52,7 +52,7 @@ class Pizza {
     }
 
     getDescription() {
-        return `Pizza Order:\n${this.pizzaSize} ${this.pizzaType} pizza with ${this.crustType} crust and toppings: ${this.toppings.join(", ")}.\nDelivery: ${this.delivery}, Address: ${this.deliveryAddress}\nPayment Method: ${this.paymentMethod}`;
+        return `Pizza Order:\n${this.pizzaSize} ${this.pizzaType} pizza with ${this.crustType} crust and toppings: ${this.toppings.join(", ")}.\nDelivery: ${this.delivery}, Address: ${this.deliveryAddress},\n Payment Method: ${this.paymentMethod}`;
     }
     calculateTotalCost() {
         let baseCost = 0;
