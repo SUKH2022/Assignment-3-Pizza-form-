@@ -19,7 +19,6 @@ function submitForm() {
         }
     }
 
-
     // Create a Pizza object
     var pizzaOrder = new Pizza(fullName, email, contactNo, pizzaType, pizzaSize, crustType, toppings, delivery, deliveryAddress, paymentMethod);
 
@@ -57,7 +56,7 @@ class Pizza {
     calculateTotalCost() {
         let baseCost = 0;
 
-        // Set base cost based on pizza size
+        // Setting the base cost based on pizza size
         switch (this.pizzaSize) {
             case "small":
                 baseCost = 8.99;
@@ -84,4 +83,3 @@ class Pizza {
         return totalCost;
     }
 }
-
